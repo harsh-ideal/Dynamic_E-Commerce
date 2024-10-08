@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.19.2",
+    "fuse.js": "^7.0.0"
+  }
+}

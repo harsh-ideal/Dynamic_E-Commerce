@@ -1,0 +1,41 @@
+<% layout("./layout/boilerplate.ejs") %>
+
+<body>
+    
+    <div class="container mt-5">
+      <h1 class="heading mb-4">Cloth's Online Shop</h1>
+      <hr/>
+      <div class="row" id="row">
+        <% clothingItems.forEach(product => { %>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="<%= product.image %>"
+              class="card-img-top"
+              alt="<%= product.name %>"
+            />
+            <div class="card-body">
+              <h4 class="card-title"><%= product.name %></h4>
+              <h6 class="card-title"><%= product.brand %></h6>
+              <p class="card-text"><i><%= product.description %></i></p>
+              <span class="card-text"><b>₹<%= product.price %></b></span><br/>
+
+              <button
+                class="btn btn-primary add-to-cart"
+                data-name="<%= product.name %>"
+                data-price="<%= product.price %>"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+      <div class="position-relative">
+        <div class="row" id="search-results"></div>
+      </div>
+    </div>
+
+   
+</body>

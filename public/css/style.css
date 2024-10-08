@@ -1,0 +1,63 @@
+body {
+    padding-top: 20px;
+}
+.container {
+    max-width: 960px;
+}
+
+
+        .heading{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .card-img-top{
+            height: 19rem;
+        }
+      .result-item {
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+      .result-item img {
+        width: 100px;
+        height: 100px;
+        margin-right: 15px;
+        object-fit: cover;
+      }
+      .result-item:hover {
+        background-color: #f1f1f1;
+      }
+      .result-item .details {
+        flex: 1;
+      }
+      .featured-product img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .navbar {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    hr{
+        background-color: black;
+    }
+    .nav-link {
+      margin: 0 10px;
+    }
+    .form-inline {
+      width: 100%;
+    }
+    .form-control {
+      border-radius: 20px;
+    }
+    .navbar-toggler-icon {
+      background-image: url("https://cdnjs.cloudflare.com/ajax/libs/fon..."); /* Custom toggle icon */
+    }
+    .bi {
+    font-size: 1.5rem;
+    color: #007bff;
+    }
+    
